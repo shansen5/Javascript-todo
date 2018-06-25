@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>
+            Todo App
+        </h1>
+        <div id='selected-todos'>
+            <input id='search' placeholder='Enter search' value=''>
+            <label>
+                <input id='show-completed' type='checkbox'>Show completed
+            </label>
+        </div>
+            <select id="sort-by">
+                <option value="byEdited">Sort by last edited</option>
+                <option value="byCreated">Sort by recently created</option>
+                <option value="alphabetical">Sort alphabetically</option>
+            </select>
+        <div id='sort-todos'>
+            
+        </div>
+        <div id='todos'></div>
+        <form id='todo-form'>
+            <input name='newTodo' placeholder='Enter a todo'>
+            <button id='create-todo'>Add Todo</button>
+        </form>
+        <!-- <script type="text/javascript" src="http://wzrd.in/standalone/uuid%2Fv4@latest" ></script> -->
+        <script type="text/javascript" src="uuidv4.js" ></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+        <script type="text/javascript">
+            const now = moment()
+            console.log( now )
+        </script>
+        <script type="text/javascript" src="todo-functions.js" ></script>
+        <script type="text/javascript" src="todo-app.js" ></script>
+    </body>
+</html>
